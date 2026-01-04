@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Salidas en JS</title>
+</head>
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="mostrarAlerta()">Mostrar mi nombre</button>
+
+    <hr>
+
+    <p id="parrafoDinamico"></p>
+    <button onclick="actualizarParrafo()">Actualizar Texto</button>
+
+    <script>
+        // 1. Mensaje en la consola al cargar la página
+        console.log("La página se ha cargado correctamente. ¡Te damos la bienvenida al ejercicio 2!");
+
+        // 2. Función para mostrar la alerta con tu nombre
+        function mostrarAlerta() {
+            alert("Hola, mi nombre es Jesús.");
+        }
+
+        // 3. Función para cambiar el contenido del párrafo
+        function actualizarParrafo() {
+            document.getElementById("parrafoDinamico").innerHTML = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+
+</body>
+</html>
